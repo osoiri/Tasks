@@ -1,0 +1,25 @@
+server:
+    port: 8080
+
+spring:
+  application:
+    name: tasks
+
+  jpa:
+    open-in-view: true
+    properties:
+      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect, not necessary as Post JDBC is import is enough to know
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tasks
+    username: postgres
+    password: postgres
+
+logging:
+  level:
+    com:
+      lisaone: INFO
