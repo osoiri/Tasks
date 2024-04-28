@@ -19,5 +19,5 @@ public class Task {
     private OffsetDateTime dueDate;
     private Integer priority;
     @Enumerated(jakarta.persistence.EnumType.STRING)
-    private TaskStatus status;
+    private TaskStatus status = TaskStatus.PENDING;
 }

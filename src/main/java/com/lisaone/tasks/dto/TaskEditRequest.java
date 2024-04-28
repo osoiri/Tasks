@@ -6,9 +6,8 @@ import lombok.Data;
 import java.time.OffsetDateTime;
 
 @Data
-public class TaskRequest {
-    private String name;
+public class TaskEditRequest {
     private String description;
     private OffsetDateTime dueDate;
-    private Integer priority;
+    private TaskStatus status;
 }
